@@ -42,7 +42,7 @@ score(75);
 
 // 3- Crée une fonction qui prend trois nombres et retourne le **plus petit** des trois
 
-**sans utiliser Math.min**
+//sans utiliser Math.min
 function petit(num1,num2,num3) {
     if (num1 > num2 && num1 >num3) {
         return num1
