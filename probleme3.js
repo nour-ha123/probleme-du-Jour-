@@ -7,12 +7,11 @@ function heure(numbre) {
     if (numbre <12) {
         return "matin"
     }
-    else if (numbre >=12 && numbre <= 18) {
+    else if (numbre <= 18) {
         return "aprés-midi"
     }
-    else if (numbre> 18) {
+    else (numbre> 18) 
         return "soir"
-    }
 }
 heure(14);
 
@@ -44,15 +43,15 @@ score(75);
 
 //sans utiliser Math.min
 function petit(num1,num2,num3) {
-    if (num1 > num2 && num1 >num3) {
+    if (num1 < num2 && num1 <num3) {
         return num1
     }
-    else if (num2>num1 && num2>num3) {
+    else if (num2<num1 && num2<num3) {
         return num2
     }
-    else if (num3>num1 && num3>num2) {
+    else (num3<num1 && num3<num2) 
         return num3
-    }
+    
 }
 petit(20,5,40);
 
