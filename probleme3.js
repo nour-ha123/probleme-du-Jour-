@@ -32,7 +32,7 @@ function score(numbre) {
     else if (numbre >= 50 && numbre < 70 && numbre < 90) {
         return "moyen"
     }
-    return faible
+    return "faible"
 }
 score(75);
 
