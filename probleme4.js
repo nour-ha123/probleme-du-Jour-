@@ -51,5 +51,6 @@ function divisible(num1) {
     if (num1 % 2 === 0 || num1 % 3 === 0 ) {
         return true
     }
-    return false
+    else (num1 % 2 === 0 && num1 % 3 === 0 )
+        return false
 }
