@@ -7,7 +7,6 @@ function nombres() {
         console.log(counter);
         counter = counter + 1;
     }
-    return
 }
 
 nombres();
@@ -15,13 +14,10 @@ nombres();
 
 // 2- Crée une fonction qui prend un nombre et affiche les nombres de ce nombre jusqu’à 0 avec while. 
 function nombres (num) {
-    var counter = 0;
-    while (counter = num) {
+    while (num >= 0) {
         console.log(num);
         num = num - 1;
-        counter = counter + 1;
     }
-    return 
 }
 nombres(5);
 
