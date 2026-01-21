@@ -14,12 +14,12 @@ factorielleN(3);
 
 // 2- Écris une fonction afficheMultiplesDe3 qui prend un nombre n et affiche tous les multiples de 3 de 0 jusqu’à n.
 function afficheMultiplesDe3 (n) {
-    var res = 0;
-    while (n % 3 === 0) {
-        res = res + n;
+    while (n > 0) {
+        if (n % 3 === 0) {
+            console.log(n);
+        }
         n--;
     }
-    return res;
 }
 afficheMultiplesDe3(9);
 
