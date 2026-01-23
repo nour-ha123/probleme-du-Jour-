@@ -4,9 +4,9 @@ function puissanceQuiAffiche (base, puissance) {
     var res =1;
     for(var i= 0; i <=puissance; i++) {
         res= res*base;
+        console.log (res);
     }
-    console.log (res);
-
+    
 }
 puissanceQuiAffiche(3,2);
 
@@ -26,7 +26,7 @@ afficheDiviseurs(9);
 // 3- Écris une fonction afficheNombresImpaire qui prend un nombre n et affiche tous les nombres impairs de 1 à n.
 function afficheNombresImpaire(n) {
     for (var i=1;i<n;i++) {
-        if(i%2 != 0) {
+        if(i%2 !== 0) {
             console.log(i);
         }
     }
