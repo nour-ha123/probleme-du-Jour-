@@ -14,7 +14,7 @@ puissanceQuiAffiche(3,2);
 // 2- Écris une fonction afficheDiviseurs qui prend un nombre n et affiche tous ses diviseurs.
 function afficheDiviseurs(n) {
     for (var i=1;i<=n;i++) {
-        if(i%n === 0) {
+        if(n%i === 0) {
             console.log(i);
         }
     }
