@@ -16,7 +16,7 @@ pair([1,2,3,4,5]);
 function inverse(t) {
     var newt = [];
     for(var i=t.length-1;i>=0;i--) {
-        newt+= t[i]
+        newt.push(t[i]);
     }
     return newt
 }
@@ -58,7 +58,7 @@ function pairs(t) {
     var newt=[];
     var i=0;
     while(i<t.length) {
-        if (t[i]%2 === 0) {
+        if (i%2 === 0) {
             newt.push(t[i]);
         }
         i++
