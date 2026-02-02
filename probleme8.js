@@ -12,7 +12,7 @@ pair (8);
 
 function inverse (chaine) {
     var res =""
-    for(var i=chaine.length -1; i >= 0 ; i--) {
+    for(var i=0; i < chaine.length ; i++) {
         res= chaine[i]+ res
     }
     return res
