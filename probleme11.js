@@ -1,9 +1,13 @@
 // 1-Écris une fonction removeByIndex qui supprime l’élément à l’index donné et retourne le nouveau tableau.
 
-function removeByIndex(tab,index) {
-   var newt = [];
-   newt = newt.slice(0,index);
-   return newt
+function removeByIndex(tab, index) {
+    var newt = [];
+    for (var i = 0; i < tab.length; i++) {
+      if (i !== index) {
+        newt.push(tab[i]);
+      }
+    }
+    return newt;
 }
 
 
@@ -11,7 +15,7 @@ function removeByIndex(tab,index) {
 function pick(objet,tab) {
     var newo= {};
     for(var i=0; i < tab.length;i++) {
-        newo[i] = objet[i];
+        newo(tab[i]) = objet(tab[i]);
     }
     return newo;
 }
