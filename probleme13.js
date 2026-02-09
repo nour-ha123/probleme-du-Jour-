@@ -25,7 +25,8 @@ function nombres (num) {
 // 2 - Écrire une fonction qui prend un tableau de phrases et retourne un tableau contenant le nombre de lettres de chaque phrase (sans compter les espaces) en utilisant each .
 function phrases (chaine) {
   return map(chaine, function(el) {
-      return el.length;
+      var phrase = el.replace(" ", "")
+      return phrase.length;
   })
 }
 
