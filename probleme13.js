@@ -32,11 +32,12 @@ function phrases (chaine) {
 
 
 // 3 - Écrire une fonction qui prend un tableau de nombres et affiche la moyenne de tous les nombres en utilisant each .
-function moyene (num) {
+function moyene (tab) {
   var somme = 0;
-  return map(num, function(el) {
-    return somme = somme + el
-  })
+  each(tab, function(el) {
+    somme = somme + el
+  });
+  return somme / tab.length
 }
 
 // 4 - Écrire une fonction appelée agesEnMinutes qui
