@@ -28,8 +28,8 @@ function plusLongNom(seauDeParesseux) {
   for (var i =0; i<seauDeParesseux.length; i++) {
     var nom = nomComplet(seauDeParesseux, i)
     var longeur = nom.length
-    if (longeur > max) {
-      max = languer
+    if (longeur > long) {
+      long = languer
       result = seauDeParesseux[i]
     }
   }
