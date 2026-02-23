@@ -71,7 +71,7 @@ var data = [
 
 function highestPopulation(arrayOfObjects) {
   return filter(arrayOfObjects, function(el){
-    return el.population > 5000
+    return el.population > 5000000
   })
 }
 
@@ -118,7 +118,7 @@ function values(obj) {
 
 function shortestString(strings) {
   var min = strings[0].length
-  var result = string[0]
+  var result = strings[0]
   each(strings, function(el,i){
   if (el.length < min)  
     min = el.length
