@@ -16,10 +16,10 @@
 
 function creerCafe (cafe, petitGateau) {
     return function servirClient(clients) {
-        if(cafe === 0){
+        if(clients > cafe){
             return "Nous n'avons plus de cafe"
         }
-        else if(petitGateau === 0 ) {
+        else if(clients > petitGateau ) {
             return "Nous n'avons plus de petits gâteaux"
         }
 
