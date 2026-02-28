@@ -24,7 +24,7 @@ function creerCafe (cafe, petitGateau) {
             cafe = cafe - clients
             petitGateau = petitGateau - clients
 
-            if(cafe < 0 || petitGateau < 0){
+            if(cafe > 0 && petitGateau > 0){
                 return "Nous avons servi " + clients + " cliens et il reste " + cafe + " cafés et " + "petits gâteaux"
             }
         }
