@@ -30,3 +30,47 @@
 // → changer le livre en cours pour être le prochain livre à lire  
 // → changer la propriété "prochain livre à lire" pour être le premier livre non lu trouvé dans la liste des livres  
 
+function Livre(Titre,Genre,Auteur) {
+    liv = {};
+    liv.Titre = Titre;
+    liv.Genre = Genre;
+    liv.Auteur = Auteur;
+    liv.Lu = false;
+    liv.Date = null;
+
+    return liv;
+    
+}
+function ListeDeLivres(){
+    liste = {};
+    liste.lus = 0;
+    liste.nonlus = 0;
+    liste.prochainLivre = null;
+    liste.livreEnCours = null;
+    liste.dernierLivreLu = null;
+    liste.livres = [];
+
+    liste.ajouter = ajouter;
+    liste.terminerLivreCourant = terminerLivreCourant;
+
+    return liste;
+
+}
+
+var ajouter = function(livre) {
+    this.livres.push(livre);
+    this.nonlus++;
+    this.livreEnCours = livre;
+    return "Livre ajouter : " + this.livre
+}
+
+var terminerLivreCourant = function() {
+    this.livreEnCours.Lu = true;
+    this.livreEnCours.date = Date.now();
+    this.dernierLivreLu = this.livreEnCours;
+    this.lus++;
+    this.nonlus--;
+    this.livreEnCours = this.prochainLivre;
+
+    return "livre terminé : " + this.dernierLivreLu;
+}
