@@ -13,7 +13,7 @@ var seauDeParesseux = [
 // et retourne le nom complet sous forme de chaîne de caractères
 // nomComplet(seauDeParesseux,0) //==> "Poilu Dangereux Assassin"
 function nomComplet(tableau, position) {
-  return tableau[position].prenom + " " + tableau[position].deuxiemePrenom + " " + tableau[position].nomDeFamille
+  return tableau[position].nom.prenom + " " + tableau[position].nom.deuxiemePrenom + " " + tableau[position].nom.nomDeFamille
 }
 
 // b- écrire une fonction qui prend un tableau d’objets (comme seauDeParesseux) 

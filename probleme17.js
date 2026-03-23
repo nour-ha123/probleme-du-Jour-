@@ -60,8 +60,12 @@ function ListeDeLivres(){
 var ajouter = function(livre) {
     this.livres.push(livre);
     this.nonlus++;
-    this.livreEnCours = livre;
-    return "Livre ajouter : " + this.livre
+    if (!this.livreEnCours) {
+        this.livreEnCours = livre;
+        this.prochainLivre = livre;
+        this.dernierLivreLu = livre;
+    }
+    return "Livre ajouter : " + livre
 }
 
 var terminerLivreCourant = function() {

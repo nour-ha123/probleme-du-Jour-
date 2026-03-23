@@ -22,7 +22,6 @@ function creerCafe (cafe, petitGateau) {
         else if(clients > petitGateau ) {
             return "Nous n'avons plus de petits gâteaux"
         }
-
         cafe = cafe - clients
         petitGateau = petitGateau - clients
         return "Nous avons servi " + clients + " cliens et il reste " + cafe + " cafés et " + petitGateau + " petits gâteaux"
