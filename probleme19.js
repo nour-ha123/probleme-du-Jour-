@@ -13,6 +13,25 @@
  *
  *
  */
+
+entrer deux chaines sortie une chaine qui contenant les caractéres presents dans les deux chaines 
+etape 1: entre comme parametres deux chaines
+etape 2: ajouter un valeur resultat vide
+etape 3: boucle for pour parcourir les chaines
+etape 4: ajouter un valeur caractere avec le peremier caractére par defaut
+etape 5: if resultat egale un caractére dans la deuxieme chaine on ajoute ce caractére a la resultat
+etape 6: inserer les caractéres presents dans les deux chaines dans le valeur resultat
+etape 7: retour null si il ya aucun caractére 
 var commonCharacters = function(string1, string2) {
-  // TODO : votre code ici !
+  var resultat = "";
+  for(var i = 0; i< string1.length; i++){
+    var caractere= string1[i];
+    if(caractere !== "" && string2.includes(caractere)){
+      resultat = resultat + caractere
+    }
+  }
+  if (resultat !== ""){
+    return resultat
+  }
+  return null
 };
