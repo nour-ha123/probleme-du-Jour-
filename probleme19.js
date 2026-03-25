@@ -14,7 +14,7 @@
  *
  */
 
-entrer deux chaines sortie une chaine qui contenant les caractéres presents dans les deux chaines 
+entrer deux chaines sortie une chaine qui contenant les caractéres presents dans les deux chaines ou bien null
 etape 1: entre comme parametres deux chaines
 etape 2: ajouter un valeur resultat vide
 etape 3: boucle for pour parcourir les chaines
@@ -26,7 +26,7 @@ var commonCharacters = function(string1, string2) {
   var resultat = "";
   for(var i = 0; i< string1.length; i++){
     var caractere= string1[i];
-    if(caractere !== "" && string2.includes(caractere)){
+    if(caractere !== "" && string2.includes(caractere) && !resultat.includes(caractere)){
       resultat = resultat + caractere
     }
   }
